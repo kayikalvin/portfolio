@@ -1,13 +1,12 @@
+import NavBar from "./components/NavBar"
+import {FaBars,FaTimes} from "react-icons/fa"
+
 function App() {
  
 
   return (
     <>
-      <div>
-        
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        
-      </div>
+      <NavBar/>
       
     </>
   )
