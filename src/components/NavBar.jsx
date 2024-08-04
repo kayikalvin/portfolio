@@ -29,13 +29,13 @@ const links = [
     
 ];
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4 text-white fixed bg-black'>
-        <h1 className='text-5xl font-signature ml-2'>Kalvoh</h1>
+    <div className='flex justify-between items-center w-full h-40 px-4 text-white fixed bg-black'>
+        <h1 className='text-7xl font-signature ml-2'>Kalvoh</h1>
         {/* by default the navbar is hidden because tailwind is mobile first so for mobiles it has to be hidden */}
         <ul className='hidden md:flex'>
             {links.map(({id,link}) => (
              <li key={id}
-                className='px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-125 duration-200'>
+                className='text-xl px-4 cursor-pointer capitalize font-semibold text-gray-400 hover:scale-125 duration-200 hover:text-cyan-500'>
                 {link}
              </li>
         ))}
