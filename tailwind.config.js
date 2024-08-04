@@ -10,6 +10,9 @@ export default {
       signature: ['Great Vibes']
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }
 
