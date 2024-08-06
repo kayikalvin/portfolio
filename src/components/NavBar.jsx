@@ -29,7 +29,7 @@ const links = [
   //comment 
 ];
   return (
-    <div className='flex justify-between items-center w-full h-30 px-4 text-white fixed bg-black'>
+    <div className='flex justify-between items-center w-full h-30 px-4 py-4 text-white fixed bg-black'>
         <h1 className='text-6xl font-signature ml-2'>Kalvoh</h1>
         {/* by default the navbar is hidden because tailwind is mobile first so for mobiles it has to be hidden */}
         <ul className='hidden md:flex'>
