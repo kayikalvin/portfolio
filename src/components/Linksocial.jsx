@@ -13,7 +13,7 @@ const Linksocial = () => {
           
           </>
         ),
-        href: 'https://linkedin.com',
+        href: 'https://www.linkedin.com/in/alvin-kayi/',
         style:'rounded-tr-md'
         
     },
@@ -25,7 +25,7 @@ const Linksocial = () => {
         
         </>
       ),
-      href: 'https://github.com.com',
+      href: 'https://github.com/kayikalvin/',
       
       
   },
