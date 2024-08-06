@@ -37,7 +37,7 @@ const Linksocial = () => {
       
       </>
     ),
-    href: 'mailto:kayikalvin@gmail.com',
+    href: "mailto:kayikalvin@gmail.com",
   
     
 },
