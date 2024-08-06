@@ -62,7 +62,7 @@ const Linksocial = () => {
       <ul>
         {links.map(({id,child,href,style,download})=>(
           <li className={'flex justify-between items-center w-40 h-14 px-4 bg-gray-800 ml-[-70px] hover:ml-[-10px] hover:rounded-md duration-300'+ "" + style} >
-          <a href={href} className='flex justify-between items-center w-full text-white'
+          <a href={href} className='flex justify-between items-center w-full font-bold text-white'
           download={download}
           target='_blank'
           rel='noreferrer'

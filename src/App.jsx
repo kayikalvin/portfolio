@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Home from "./components/Home"
 import Linksocial from "./components/Linksocial"
 import NavBar from "./components/NavBar"
@@ -10,6 +11,9 @@ function App() {
     <>
       <NavBar/>
       <Home/>
+      <About/>
+
+
       <Linksocial/>
            
     </>
