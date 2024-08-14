@@ -4,6 +4,7 @@ import Linksocial from "./components/Linksocial"
 import NavBar from "./components/NavBar"
 import {FaBars,FaTimes} from "react-icons/fa"
 import Portfolio from "./components/Portfolio"
+import Experience from "./components/Experience"
 
 function App() {
  
@@ -14,6 +15,7 @@ function App() {
       <Home/>
       <About/>
       <Portfolio/>
+      <Experience/>
 
 
       <Linksocial/>
