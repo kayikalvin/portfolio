@@ -13,37 +13,43 @@ const Portfolio = () => {
             id: 1,
             src: arrayDestruct,
             demoUrl: 'https://example.com/demo1',
-            codeUrl: 'https://github.com/example/repo1'
+            codeUrl: 'https://github.com/kayikalvin/World-homicide-analysis',
+            name:'World Homicide Analysis'
         },
         {
             id: 2,
             src: reactParallax,
             demoUrl: 'https://example.com/demo2',
-            codeUrl: 'https://github.com/example/repo2'
+            codeUrl: 'https://github.com/kayikalvin/Walmart-DataAnalysis',
+            name:'Walmart Sales Analysis'
         },
         {
             id: 3,
             src: navbar,
             demoUrl: 'https://example.com/demo3',
-            codeUrl: 'https://github.com/example/repo3'
+            codeUrl: 'https://github.com/kayikalvin/Udemy-DataAnalysis',
+            name:'Udemy Courses Analysis'
         },
         {
             id: 4,
             src: reactSmooth,
             demoUrl: 'https://example.com/demo4',
-            codeUrl: 'https://github.com/example/repo4'
+            codeUrl: 'https://github.com/kayikalvin/Weather-dataset-Analysis',
+            name:'Weather Data Analysis'
         },
         {
             id: 5,
             src: installNode,
             demoUrl: 'https://example.com/demo5',
-            codeUrl: 'https://github.com/example/repo5'
+            codeUrl: 'https://github.com/kayikalvin/Ultra_Marathon_USA_Analysis',
+            name:'USA Ultra Marathon Analysis'
         },
         {
             id: 6,
             src: reactWeather,
             demoUrl: 'https://example.com/demo6',
-            codeUrl: 'https://github.com/example/repo6'
+            codeUrl: 'https://github.com/kayikalvin/diabetespredictor',
+            name:'Diabetes Predictor App'
         },
     ];
 
@@ -65,9 +71,12 @@ const Portfolio = () => {
                 </div>
                 
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-                    {portfolios.map(({ id, src, demoUrl, codeUrl }) => (
+                    {portfolios.map(({ id, src, demoUrl, codeUrl, name }) => (
                         <div key={id} className='shadow-md shadow-cyan-800 rounded-lg'>
                             <img src={src} alt="" className='rounded-md duration-200 hover:scale-110' />
+                            <div>
+                                {name}
+                            </div>
                             <div className='flex items-center justify-center'>
                                 <button 
                                     className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-bold text-2xl hover:text-cyan-500'
