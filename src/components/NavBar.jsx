@@ -37,7 +37,7 @@ const links = [
         <ul className='hidden md:flex'>
             {links.map(({id,link}) => (
              <li key={id}
-                className='text-xl px-4 cursor-pointer capitalize font-semibold text-gray-400 hover:scale-125 duration-200 hover:text-cyan-500'>
+                className='text-xl px-4 cursor-pointer capitalize font-semibold text-gray-400 hover:scale-105 duration-200 hover:text-cyan-500'>
                 <Link to={link} smooth duration={400}>{link}</Link> 
              </li>
         ))}
