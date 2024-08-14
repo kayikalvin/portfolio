@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Home = () => {
   return (
-    <div name ='home' className='h-screen w-full bg-gradient-to-b from-black via-black to-cyan-700 pt-50 md:pt-20'>
+    <div name ='home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-500 pt-50 md:pt-20'>
         <div className='max-w-screen-lg mx-auto flex gap-40 flex-col items-center justify-center h-full px-4 md:flex-row'>
             <div className='flex flex-col justify-center w-fullh-full'>
                 <h2 className='text-4xl sm:text-6xl font-bold text-white'>I'm a Data Analyst</h2>

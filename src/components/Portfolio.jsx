@@ -1,68 +1,93 @@
-import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg"
-import installNode from "../assets/portfolio/installNode.jpg"
-import navbar from "../assets/portfolio/navbar.jpg"
-import reactParallax from "../assets/portfolio/reactParallax.jpg"
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg"
-import reactWeather from "../assets/portfolio/reactWeather.jpg"
+import React from 'react';
+import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import installNode from "../assets/portfolio/installNode.jpg";
+import navbar from "../assets/portfolio/navbar.jpg";
+import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
 const Portfolio = () => {
-    const portfolios =[
+    // Updated array with demoUrl and codeUrl
+    const portfolios = [
         {
-            id:1,
-            src: arrayDestruct
-        
+            id: 1,
+            src: arrayDestruct,
+            demoUrl: 'https://example.com/demo1',
+            codeUrl: 'https://github.com/example/repo1'
         },
         {
-            id:2,
-            src: reactParallax
-        
+            id: 2,
+            src: reactParallax,
+            demoUrl: 'https://example.com/demo2',
+            codeUrl: 'https://github.com/example/repo2'
         },
         {
-            id:3,
-            src: navbar
-        
+            id: 3,
+            src: navbar,
+            demoUrl: 'https://example.com/demo3',
+            codeUrl: 'https://github.com/example/repo3'
         },
         {
-            id:4,
-            src: reactSmooth
-        
+            id: 4,
+            src: reactSmooth,
+            demoUrl: 'https://example.com/demo4',
+            codeUrl: 'https://github.com/example/repo4'
         },
         {
-            id:1,
-            src: installNode 
-        
-        }, {
-            id:6,
-            src: reactWeather
-        
+            id: 5,
+            src: installNode,
+            demoUrl: 'https://example.com/demo5',
+            codeUrl: 'https://github.com/example/repo5'
         },
-    ]
-  return (
-   <div name='portfolio' className='bg-gradient-to-b from-black to-gray-500 w-full text-white md:h-screen'>
-    <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
-            <p className='py-6'>Check out some of my work right now</p>
-        </div>
-        
-        <div key={id} className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-            {portfolios.map(({id,src})) => (
-                <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                    <img src={src} alt="" className='rounded-md duration-200 hover:scale-110' />
-                    <div className='flex items-center justify-center'>
-                        <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Demo</button>
-                        <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>Code</button>
-                    </div>
+        {
+            id: 6,
+            src: reactWeather,
+            demoUrl: 'https://example.com/demo6',
+            codeUrl: 'https://github.com/example/repo6'
+        },
+    ];
+
+    // Click handler functions
+    const handleDemoClick = (url) => {
+        window.open(url, '_blank');
+    };
+
+    const handleCodeClick = (url) => {
+        window.open(url, '_blank');
+    };
+
+    return (
+        <div name='portfolio' className='bg-gradient-to-b from-black to-gray-500 w-full text-white md:h-screen'>
+            <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
+                <div className='pb-8'>
+                    <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
+                    <p className='py-6'>Check out some of my work right now</p>
+                </div>
+                
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+                    {portfolios.map(({ id, src, demoUrl, codeUrl }) => (
+                        <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
+                            <img src={src} alt="" className='rounded-md duration-200 hover:scale-110' />
+                            <div className='flex items-center justify-center'>
+                                <button 
+                                    className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-bold text-2xl hover:text-cyan-500'
+                                    onClick={() => handleDemoClick(demoUrl)}
+                                >
+                                    Demo
+                                </button>
+                                <button 
+                                    className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-bold text-2xl  hover:text-cyan-500'
+                                    onClick={() => handleCodeClick(codeUrl)}
+                                >
+                                    Code
+                                </button>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
+        </div>
+    );
+};
 
-        )
-    }
-        
-    </div>
-   </div>
-  )
-}
-
-export default Portfolio
+export default Portfolio;
