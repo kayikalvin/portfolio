@@ -1,3 +1,4 @@
+
 import About from "./components/About"
 import Home from "./components/Home"
 import Linksocial from "./components/Linksocial"
@@ -25,3 +26,5 @@ function App() {
 }
 
 export default App
+
+
