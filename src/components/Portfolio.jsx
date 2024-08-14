@@ -5,6 +5,8 @@ import navbar from "../assets/portfolio/navbar.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import { FaGithub } from "react-icons/fa";
+
 
 const Portfolio = () => {
     // Updated array with demoUrl and codeUrl
@@ -74,20 +76,22 @@ const Portfolio = () => {
                     {portfolios.map(({ id, src, demoUrl, codeUrl, name }) => (
                         <div key={id} className='shadow-md shadow-cyan-800 rounded-lg'>
                             <img src={src} alt="" className='rounded-md duration-200 hover:scale-110' />
-                            <div>
+                            <div className='flex justify-center align-middle text-2xl font-bold pt-4 text-gray-300'>
                                 {name}
                             </div>
                             <div className='flex items-center justify-center'>
                                 <button 
-                                    className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-bold text-2xl hover:text-cyan-500'
+                                    className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-bold text-gray-500 text-xl hover:text-cyan-500'
                                     onClick={() => handleDemoClick(demoUrl)}
                                 >
                                     Demo
                                 </button>
                                 <button 
-                                    className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110 font-bold text-2xl  hover:text-cyan-500'
+                                    className='w-1/2 px-6 py-3 m-4 flex gap-2 duration-200 hover:scale-110 font-bold text-xl text-gray-300  hover:text-cyan-500'
                                     onClick={() => handleCodeClick(codeUrl)}
                                 >
+                                    <FaGithub size={20}/>
+
                                     Code
                                 </button>
                             </div>
