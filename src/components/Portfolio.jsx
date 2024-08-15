@@ -14,42 +14,42 @@ const Portfolio = () => {
         {
             id: 1,
             src: arrayDestruct,
-            demoUrl: 'https://example.com/demo1',
+            demoUrl: 'https://github.com/kayikalvin/World-homicide-analysis',
             codeUrl: 'https://github.com/kayikalvin/World-homicide-analysis',
             name:'World Homicide Analysis'
         },
         {
             id: 2,
             src: reactParallax,
-            demoUrl: 'https://example.com/demo2',
+            demoUrl: 'https://github.com/kayikalvin/Walmart-DataAnalysis',
             codeUrl: 'https://github.com/kayikalvin/Walmart-DataAnalysis',
             name:'Walmart Sales Analysis'
         },
         {
             id: 3,
             src: navbar,
-            demoUrl: 'https://example.com/demo3',
+            demoUrl: 'https://github.com/kayikalvin/Udemy-DataAnalysis',
             codeUrl: 'https://github.com/kayikalvin/Udemy-DataAnalysis',
             name:'Udemy Courses Analysis'
         },
         {
             id: 4,
             src: reactSmooth,
-            demoUrl: 'https://example.com/demo4',
+            demoUrl: 'https://github.com/kayikalvin/Weather-dataset-Analysis',
             codeUrl: 'https://github.com/kayikalvin/Weather-dataset-Analysis',
             name:'Weather Data Analysis'
         },
         {
             id: 5,
             src: installNode,
-            demoUrl: 'https://example.com/demo5',
+            demoUrl: 'https://github.com/kayikalvin/Ultra_Marathon_USA_Analysis',
             codeUrl: 'https://github.com/kayikalvin/Ultra_Marathon_USA_Analysis',
             name:'USA Ultra Marathon Analysis'
         },
         {
             id: 6,
             src: reactWeather,
-            demoUrl: 'https://example.com/demo6',
+            demoUrl: 'https://github.com/kayikalvin/diabetespredictor',
             codeUrl: 'https://github.com/kayikalvin/diabetespredictor',
             name:'Diabetes Predictor App'
         },
