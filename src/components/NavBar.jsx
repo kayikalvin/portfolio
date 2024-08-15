@@ -7,21 +7,11 @@ const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home'); // State to track the active link
 
   const links = [
-    { id: 1,
-      link: 'home' 
-    },
-    { id: 2,
-       link: 'about' 
-    },
-    { id: 3, 
-      link: 'portfolio'
-    },
-    { id: 4,
-      link: 'experience' 
-    },
-    { id: 5,
-      link: 'contact' 
-    },
+    { id: 1, link: 'home' },
+    { id: 2, link: 'about' },
+    { id: 3, link: 'portfolio' },
+    { id: 4, link: 'experience' },
+    { id: 5, link: 'contact' },
   ];
 
   // Function to handle link click and set active link
@@ -68,7 +58,14 @@ const NavBar = () => {
               className={`px-4 cursor-pointer capitalize py-6 text-4xl ${
                 activeLink === link ? 'text-cyan-500' : 'text-gray-400'
               }`}
-              onClick={() => handleLinkClick(link)}
+              onClick={() => {
+                handleLinkClick(link);
+                // Trigger the scrolling action manually
+                document.querySelector(`.${link}`).scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
             >
               <Link to={link} smooth duration={400} offset={-70}>
                 {link}
