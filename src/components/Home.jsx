@@ -1,9 +1,15 @@
 import React from 'react'
 import HeroImg from "../assets/heroImage.jpg";
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from 'react-scroll';
+
 
 
 const Home = () => {
+    const links = [
+        { id: 1,
+          link: 'portfolio' },
+    ]
   return (
     <div name ='home' id='home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-700 md:pt-20'>
         <div className='max-w-screen-lg mx-auto flex gap-30 flex-col items-center justify-center h-full px-4 md:flex-row'>
@@ -19,7 +25,9 @@ const Home = () => {
                 </p>
                 <div>
                     <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md shadow-xl bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
-                        Portfolio 
+                    <Link to='portfolio' smooth duration={400} offset={-70}>
+                        Portfolio   
+                    </Link>
                         <span className='group-hover:rotate-90 duration-200'>
                             <GoArrowUpRight size={10} className='ml-1'/>
                         </span>
