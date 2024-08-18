@@ -3,10 +3,10 @@ import React from 'react'
 const Contact = () => {
   return (
     <div name='contact' className='w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
-        <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
+        <div className='flex flex-col p-4 pt-40 max-w-screen-lg mx-auto h-full'>
             <div className='pb-8 mx-auto text-center'>
                 <p className='text-4xl text-gray-300 font-bold inline border-b-4 border-gray-500'>Contact</p>
-                <p className='py-6'>Submit the form to get in  touch with us</p>
+                <p className='py-6 font-semibold text-gray-300'>Submit the form to get in  touch with us</p>
             </div>
             <div className='flex justify-center items-center'>
                 <form action="https://getform.io/f/bwngkvna" method='POST' className='flex flex-col w-full md:w-1/2'>
